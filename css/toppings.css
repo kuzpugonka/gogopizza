@@ -1,0 +1,53 @@
+.toppings {
+  padding: 24px 0;
+}
+.toppings__title {
+  position: fixed;
+  transform: scale(0);
+}
+.toppings__button {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--dark);
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-bottom: 16px; /* возможно придется изменить */
+}
+.toppings__arrow {
+  transform: transition 0.3s ease;
+}
+.toppings__button_active .toppings__arrow {
+  transform: scaleY(-1);
+}
+.toppings__list {
+  display: none;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.toppings__list_show {
+  display: flex;
+
+}
+/* .toppings__item {} */
+.toppings__label {
+  display: block;
+  background: var(--white);
+  border-radius: 32px;
+  padding: 8px 24px;
+  font-size: 14px;
+  color: var(--beige);
+  border: 1px solid transparent;
+}
+.toppings__checkbox {
+  position: absolute;
+  appearance: none;
+}
+.toppings__checkbox:focus-visible + .toppings__label {
+  background-color: var(--white);
+  border-color: var(--orange);
+}
+.toppings__checkbox:checked + .toppings__label {
+  background-color: var(--orange);
+  color: var(--light);
+}

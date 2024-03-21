@@ -1,0 +1,51 @@
+.hero {
+  padding-top: 80px;
+  padding-bottom: 212px;
+  position: relative;
+  background-image: linear-gradient(47deg, #eb8a14 0%, #ecd55a 100%);
+  border-radius: 0 0 16px 16px;
+  margin-bottom: 43px;
+}
+.hero__container::after {
+  content: "";
+  position: absolute;
+  bottom: -43px;
+  right: calc(var(--offset-container) + 7px);
+  width: calc(100vw / (320 / 261));
+  height: calc(100vw / (320 / 230));
+  max-width: 382px;
+  max-height: 337px;
+  background-image: url(../image/cheese-slice-of-pizza-stretches-cheese-for-hero-320.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.hero__content {
+  position: relative;
+  z-index: 4;
+  max-width: 292px;
+}
+.hero__title {
+  margin-bottom: 12px;
+  font-weight: 900;
+  font-size: 38px;
+  line-height: 1;
+  color: var(--dark);
+}
+.hero__tagline {
+  margin-bottom: 24px;
+  font-size: 14px;
+  color: var(--dark);
+  background-image: url(../image/icons/car-for-hero.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 32px;
+}
+.hero__order {
+  border-radius: 32px;
+  padding: 8px 24px;
+  background-color: var(--light);
+
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--orange);
+}

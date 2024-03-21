@@ -1,0 +1,22 @@
+.header {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 5;
+}
+.header__container {
+  display: flex;justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.header__logo {
+  width: 120px;
+}
+.header__cart {
+  color: var(--dark);
+}
+
+.header__cart:hover {
+  color: var(--orange);
+}
