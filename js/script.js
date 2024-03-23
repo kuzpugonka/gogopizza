@@ -49,10 +49,12 @@ const createCard = (data) => {
   </picture>
 
   <div class="card__content">
-    <h3 class="card__title">${data.name.ru}</h3>
+    <h3 class="card__title">
+    ${data.name.ru[0].toUpperCase()}${data.name.ru.slice(1).toLowerCase()}
+    </h3>
 
     <p class="card__info">
-      <span class="card__price">${data.price['25cm']} ₽</span>
+      <span class="card__price">${data.price["25cm"]} ₽</span>
       <span>/</span>
       <span class="card__weight">25 см</span>
     </p>
@@ -71,11 +73,11 @@ const renderPizzas = async () => {
   pizzaList.textContent = "";
 
   const items = pizzas.map((data) => {
-    console.log('data: ', data);
+    console.log("data: ", data);
     const item = document.createElement("li");
     item.classList.add("pizza__item");
     const card = createCard(data);
-    item.append(card)
+    item.append(card);
 
     return item;
   });
