@@ -1,3 +1,4 @@
+/* стили для мобильных экранов с разрешением 320px */
 .toppings {
   padding: 24px 0;
 }
@@ -12,7 +13,6 @@
   display: flex;
   gap: 4px;
   align-items: center;
-  margin-bottom: 16px; /* возможно придется изменить */
 }
 .toppings__arrow {
   transform: transition 0.3s ease;
@@ -26,11 +26,11 @@
   gap: 8px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height .3s ease;
+  transition: max-height 0.3s ease;
 }
 .toppings__list_show {
   display: flex;
-
+  margin-top: 16px;
 }
 /* .toppings__item {} */
 .toppings__label {
@@ -54,3 +54,33 @@
   background-color: var(--orange);
   color: var(--light);
 }
+
+/* стили для планшетов с разрешением 768px */
+@media (width >= 560px) {
+  .toppings {
+    padding: 32px 0;
+  }
+  .toppings__label {
+    font-size: 20px;
+  }
+}
+/* стили для ноутбуков с разрешением 1024px */
+@media (width >= 890px) {
+  .toppings__button {
+    display: none;
+  }
+  .toppings__title {
+    position: static;
+    transform: none;
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--dark);
+    margin-bottom: 16px;
+  }
+  .toppings__list {
+    display: flex;
+    max-height: none;
+  }
+}
+/* стили для десктопной версии с разрешением 1440px */
+

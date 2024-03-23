@@ -1,0 +1,43 @@
+/* стили для мобильных экранов с разрешением 320px */
+.footer__container {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--beige);
+}
+.footer__logo {
+  padding: 32px 0px;
+  width: 222px;
+}
+.footer__copiright {
+  font-size: 14px;
+  color: var(--beige);
+  margin-bottom: 16px;
+}
+.footer__dev {
+  font-size: 14px;
+  color: var(--beige);
+}
+.footer__link:hover {
+  color: var(--orange);
+}
+/* стили для планшетов с разрешением 768px */
+@media (width >= 560px) {
+  .footer__container {
+    margin-bottom: 40px;
+  }
+  .footer__logo {
+    padding: 64px 0px;
+    width: 400px;
+  }
+  .footer__copiright {
+    font-size: 20px;
+  }
+  .footer__dev {
+    font-size:20px;
+  }
+}
+/* стили для ноутбуков с разрешением 1024px */
+
+/* стили для десктопной версии с разрешением 1440px */

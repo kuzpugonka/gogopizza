@@ -1,3 +1,4 @@
+/* стили для мобильных экранов с разрешением 320px */
 .pizza {
   padding: 24px 0;
 }
@@ -10,5 +11,32 @@
 }
 .pizza__list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 16px;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  margin-bottom: 24px;
+}
+/* стили для планшетов с разрешением 768px */
+@media (width >= 560px) {
+  .pizza {
+    padding: 64px 0px;
+  }
+  .pizza__title {
+    font-size: 44px;
+  }
+  .pizza__list {
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+  }
+}
+/* стили для ноутбуков с разрешением 1024px */
+@media (width >= 890px) {
+    .pizza__list {
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+  }
+}
+/* стили для десктопной версии с разрешением 1440px */
+@media (width >= 1140px) {
+  .pizza__list {
+    grid-template-columns: repeat(4, minmax(210px, 1fr));
+    gap: 20px;
+  }
 }

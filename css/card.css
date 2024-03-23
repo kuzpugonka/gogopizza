@@ -1,3 +1,4 @@
+/* стили для мобильных экранов с разрешением 320px */
 .card {
   position: relative;
   padding-top: 35px;
@@ -35,7 +36,6 @@
   text-align: right;
   color: var(--dark);
 }
-/* .card__weight {} */
 .card__button {
   width: 100%;
   font-size: 14px;
@@ -44,3 +44,31 @@
   padding: 8px 24px;
   background: var(--light);
 }
+/* стили для планшетов с разрешением 768px */
+@media (width >= 560px) {
+  .card {
+    padding-top: 46px;
+  }
+  .card__image {
+    width: 180px;
+  }
+  .card__content {
+    padding: 146px 24px 24px;
+    border-radius: 32px;
+  }
+  .card__title {
+    font-size: 24px;
+  }
+  .card__info {
+    gap: 8px;
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+ 
+  .card__button {
+    font-size: 20px;
+  }
+}
+/* стили для ноутбуков с разрешением 1024px */
+
+/* стили для десктопной версии с разрешением 1440px */
