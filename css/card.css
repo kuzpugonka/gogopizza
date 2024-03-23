@@ -2,6 +2,8 @@
 .card {
   position: relative;
   padding-top: 35px;
+  display: flex;
+  flex-direction: column;
 }
 .card__image {
   position: absolute;
@@ -14,6 +16,9 @@
   background-color: var(--white);
   padding: 48px 8px 8px;
   border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 .card__title {
   font-weight: 600;
@@ -21,6 +26,7 @@
   text-align: center;
   color: var(--dark);
   margin-bottom: 4px;
+  flex-grow: 1;
 }
 .card__info {
   display: flex;
@@ -37,12 +43,14 @@
   color: var(--dark);
 }
 .card__button {
+  display: block;
   width: 100%;
   font-size: 14px;
   color: var(--orange);
   border-radius: 32px;
   padding: 8px 24px;
   background: var(--light);
+  margin-top: auto;
 }
 /* стили для планшетов с разрешением 768px */
 @media (width >= 560px) {

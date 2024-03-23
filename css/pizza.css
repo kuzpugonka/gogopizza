@@ -15,6 +15,15 @@
   grid-template-columns: repeat(2, minmax(140px, 1fr));
   margin-bottom: 24px;
 }
+
+/* для ровной высоты карточек */
+.pizza__item {
+  display: flex;
+  flex-direction: column;
+}
+.pizza__card {
+  flex-grow: 1;
+}
 /* стили для планшетов с разрешением 768px */
 @media (width >= 560px) {
   .pizza {
