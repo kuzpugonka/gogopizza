@@ -41,6 +41,7 @@
   font-size: 14px;
   color: var(--beige);
   border: 1px solid transparent;
+  cursor: pointer;
 }
 .toppings__checkbox {
   position: absolute;
