@@ -1,11 +1,13 @@
 /* стили для мобильных экранов с разрешением 320px */
 .hero {
-  padding-top: 80px;
-  padding-bottom: 212px;
-  position: relative;
   background-image: linear-gradient(47deg, #eb8a14 0%, #ecd55a 100%);
   border-radius: 0 0 16px 16px;
   margin-bottom: 43px;
+}
+.hero__container {
+  position: relative;
+  padding-top: 80px;
+  padding-bottom: 212px;
 }
 .hero__container::after {
   content: "";
@@ -54,10 +56,12 @@
 /* стили для планшетов с разрешением 768px */
 @media (width >= 560px) {
   .hero {
-    padding-top: 116px;
-    padding-bottom: 90px;
     margin-bottom: 60x;
     border-radius: 0 0 32px 32px;
+  }
+  .header__container {
+    padding-top: 116px;
+    padding-bottom: 90px;
   }
   .hero__container::after {
     bottom: -60px;
@@ -85,10 +89,12 @@
 /* стили для ноутбуков с разрешением 1024px */
 @media (width >= 890px) {
   .hero {
-    padding-top: 126px;
-    padding-bottom: 80px;
     margin-bottom: 82x;
     border-radius: 0 0 32px 32px;
+  }
+  .header__container {
+    padding-top: 126px;
+    padding-bottom: 80px;
   }
   .hero__container::after {
     content: "";
@@ -102,9 +108,11 @@
 /* стили для десктопной версии с разрешением 1440px */
 @media (width >= 1140px) {
   .hero {
+    margin-bottom: 87x;
+  }
+  .header__container {
     padding-top: 140px;
     padding-bottom: 100px;
-    margin-bottom: 87x;
   }
   .hero__container::after {
     bottom: -87px;
