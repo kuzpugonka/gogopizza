@@ -14,13 +14,13 @@
   border-top-color: var(--orange);
   width: 50px;
   height: 50px;
-  animation: spinner 1s linear infinite;
+  animation: spinner .8s ease-in-out infinite;
 }
 @keyframes spinner {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(355deg);
   }
 }
