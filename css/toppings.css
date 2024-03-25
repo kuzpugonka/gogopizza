@@ -32,7 +32,6 @@
   display: flex;
   margin-top: 16px;
 }
-/* .toppings__item {} */
 .toppings__label {
   display: block;
   background: var(--white);
@@ -43,6 +42,9 @@
   border: 1px solid transparent;
   cursor: pointer;
 }
+.toppings__label:hover {
+  color: var(--orange);
+}
 .toppings__checkbox {
   position: absolute;
   appearance: none;
@@ -50,6 +52,7 @@
 .toppings__checkbox:focus-visible + .toppings__label {
   background-color: var(--white);
   border-color: var(--orange);
+  color: var(--orange);
 }
 .toppings__checkbox:checked + .toppings__label {
   background-color: var(--orange);
