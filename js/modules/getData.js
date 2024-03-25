@@ -1,4 +1,4 @@
-import { showLoader } from "./loader.js";
+import { hideLoader, showLoader } from "./loader.js";
 
 export const getData = async (url) => {
   showLoader();
@@ -11,5 +11,8 @@ export const getData = async (url) => {
     return await response.json();
   } catch (error) {
     console.error(`Данные с сервера не получены: ${error}`);
+    return [];
+  } finally {
+    hideLoader();
   }
 };
