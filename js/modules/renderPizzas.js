@@ -33,8 +33,12 @@ const createCard = (data) => {
   return card;
 };
 
-export const renderPizzas = async () => {
-  const pizzas = await getData("https://cooperative-autumn-swordfish.glitch.me/api/products");
+export const renderPizzas = async (toppings) => {
+  const pizzas = await getData(
+    `https://cooperative-autumn-swordfish.glitch.me/api/products${
+      toppings ? `?toppings=${toppings}` : ""
+    }`
+  );
   const pizzaList = document.querySelector(".pizza__list");
   pizzaList.textContent = "";
 
