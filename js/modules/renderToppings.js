@@ -57,11 +57,13 @@ export const renderToppings = async () => {
       toppingsList.append(itemReset);
     } else {
       itemReset.remove();
+      renderPizzas();
     }
   });
 
   btnReset.addEventListener("click", () => {
     itemReset.remove();
     toppingsForm.reset();
+    renderPizzas();
   });
 };
