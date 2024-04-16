@@ -1,6 +1,6 @@
 import { getData } from "./getData.js";
 
-const btnReset = document.querySelector("button");
+const btnReset = document.createElement("button");
 btnReset.classList.add("pizza__reset-toppings");
 btnReset.textContent = "Сбросить фильтр";
 btnReset.type = "reset";
@@ -51,7 +51,7 @@ export const renderPizzas = async (toppings) => {
 
   if (pizzas.length) {
     pizzaTitle.textContent = "Пицца";
-
+    btnReset.remove();
     const items = pizzas.map((data) => {
       const item = document.createElement("li");
       item.classList.add("pizza__item");
@@ -69,5 +69,5 @@ export const renderPizzas = async (toppings) => {
 
 btnReset.addEventListener("click", () => {
   renderPizzas();
-  document.querySelector("toppings__reset").remove();
+  document.querySelector(".toppings__reset").remove();
 });
