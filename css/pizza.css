@@ -24,6 +24,27 @@
 .pizza__card {
   flex-grow: 1;
 }
+.pizza__reset-toppings {
+padding: 8px 24px;
+border-radius: 32px;
+border: 1px solid transparent;
+background: var(--orange);
+font-size: 20px;
+font-weight: 600;
+line-height: 1.4;
+color: var(--white);
+outline: none;
+}
+.pizza__reset-toppings:focus-visible {
+  background-color: var(--white);
+  color: var(--orange);
+  border-color: var(--orange);
+}
+.pizza__reset-toppings:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
 /* стили для планшетов с разрешением 768px */
 @media (width >= 560px) {
   .pizza {
