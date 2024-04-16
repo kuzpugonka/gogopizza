@@ -56,6 +56,9 @@ outline: none;
   .pizza__list {
     grid-template-columns: repeat(2, minmax(170px, 1fr));
   }
+  .pizza__reset-toppings {
+    font-size: 20px;
+  }
 }
 /* стили для ноутбуков с разрешением 1024px */
 @media (width >= 890px) {
