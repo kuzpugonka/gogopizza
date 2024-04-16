@@ -58,13 +58,35 @@
   background-color: var(--orange);
   color: var(--light);
 }
-
+.toppings__reset {
+  font-size: 14px;
+  color: var(--orange);
+  line-height: 1.4;
+  display: block;
+  background: var(--white);
+  border-radius: 32px;
+  padding: 8px 24px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.toppings__reset:hover {
+  background-color: var(--orange);
+  color: var(--white);
+}
+.toppings__reset:focus-visible {
+  background: var(--white);
+  border: 1px solid #b66200;
+  color: var(--orange);
+}
 /* стили для планшетов с разрешением 768px */
 @media (width >= 560px) {
   .toppings {
     padding: 32px 0;
   }
   .toppings__label {
+    font-size: 20px;
+  }
+  .toppings__reset {
     font-size: 20px;
   }
 }
@@ -85,6 +107,8 @@
     display: flex;
     max-height: none;
   }
+  .toppings__reset {
+    font-weight: 600;
+  }
 }
 /* стили для десктопной версии с разрешением 1440px */
-
